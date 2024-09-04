@@ -1,0 +1,5 @@
+Name: riya
+CNIC: 188
+Age: 19
+Salary: 2899
+Contact Number: 1882
