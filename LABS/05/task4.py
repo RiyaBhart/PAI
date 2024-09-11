@@ -19,4 +19,4 @@ a.get_data()
 
 print(f"Salary after tax: {a.salary_after_tax()}")
 
-print(f"Updated tax percentage: {a.update_tax_percentage()}")
+print(f"Updated tax percentage: {a.update_tax_percentage()}%")
