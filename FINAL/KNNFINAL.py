@@ -53,22 +53,3 @@ print(f"Recall: {recall:.2f}")
 f1 = f1_score(Y_test, Y_test,average='macro')
 print(f"F1 Score: {f1:.2f}")
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-
-lr = LogisticRegression()
-lr.fit(X_train, Y_train)
-y_pred_lr = lr.predict(X_test)
-print("Accuracy:", accuracy_score(Y_test, y_pred_lr))
-print("Confusion Matrix:\n", confusion_matrix(Y_test, y_pred_lr))
-print("Classification Report:\n", classification_report(Y_test, y_pred_lr))
-
-svm = SVC()
-svm.fit(X_train, Y_train)
-y_pred_svm = svm.predict(X_test)
-print("Accuracy:", accuracy_score(Y_test, y_pred_svm))
-print("Confusion Matrix:\n", confusion_matrix(Y_test, y_pred_svm))
-print("Classification Report:\n", classification_report(Y_test, y_pred_svm))
-
